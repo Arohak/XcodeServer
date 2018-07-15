@@ -41,7 +41,6 @@ private extension AppDelegate {
 }
 
 extension AppDelegate: UIApplicationDelegate {
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
         
         setupWindow()
@@ -57,7 +56,6 @@ extension AppDelegate: UIApplicationDelegate {
 }
 
 extension AppDelegate: SPDLocationAuthorizationDelegate {
-    
     func authorizationDenied(for locationAuthorization: SPDLocationAuthorization) {
         let alertController = UIAlertController(title: "Permission Denied", message: "Speedometer needs access to your location to function.", preferredStyle: .alert)
         
